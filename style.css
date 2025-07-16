@@ -1,0 +1,185 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffdf8;
+  color: #1e1e2f;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background: #f94c10;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffece0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+main {
+  max-width: 900px;
+  padding: 30px 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #f94c10;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  border-bottom: 3px solid #00a6a6;
+  padding-bottom: 5px;
+  font-family: 'Georgia', serif;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #1e1e2f;
+  max-width: 750px;
+  margin-bottom: 12px;
+}
+
+/* Cards do cardápio */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background: #f6faff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,166,166,0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,166,166,0.2);
+}
+
+.menu-item h3 {
+  color: #00a6a6;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  color: #3b3b3b;
+}
+
+/* Contato */
+footer {
+  background: #f94c10;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Botão de pedido */
+.btn-order {
+  display: inline-block;
+  background: #3ccf4e;
+  color: white;
+  padding: 14px 30px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.btn-order:hover {
+  background: #34b944;
+}
+
+/* Imagem de pizza */
+.pizza-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pizza-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  .pizza-image img {
+    width: 90%;
+  }
+}
